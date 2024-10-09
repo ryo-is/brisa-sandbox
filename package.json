@@ -6,13 +6,15 @@
     "dev": "brisa dev",
     "dev:debug": "brisa dev --debug",
     "build": "brisa build",
-    "start": "brisa start"
+    "start": "brisa start",
+    "lint": "biome lint ./src",
+    "format": "biome format --write ./src"
   },
   "dependencies": {
-    "biome": "^0.3.3",
     "brisa": "0.1.1"
   },
   "devDependencies": {
+    "@biomejs/biome": "1.9.3",
     "@types/bun": "latest",
     "typescript": "latest"
   }
