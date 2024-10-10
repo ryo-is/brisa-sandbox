@@ -1,7 +1,7 @@
 import type { RequestContext } from 'brisa';
 import { rerenderInAction } from 'brisa/server';
 
-export default function CounterServer(
+export function CounterServer(
 	{ initialValue = 0 }: { initialValue: number },
 	{ store }: RequestContext,
 ) {

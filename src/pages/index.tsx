@@ -1,4 +1,5 @@
-import CounterServer from '@/components/counter-server';
+import { CounterServer } from '@/components/counter-server';
+import { FormSample } from '@/components/form';
 
 export default function Homepage() {
 	return (
@@ -17,6 +18,7 @@ export default function Homepage() {
 					<counter-client initialValue={42} />
 					<CounterServer initialValue={37} />
 				</div>
+				<FormSample />
 			</section>
 		</>
 	);
